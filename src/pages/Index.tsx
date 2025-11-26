@@ -49,9 +49,8 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm <span className="gradient-text">Alex</span>.
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I design bold, expressive visuals that help brands tell their story. From digital campaigns 
-              to brand identity, I create designs that stand out and connect.
+            <p className="text-lg text-muted-foreground leading-relaxed font-bold">
+              Welcome to My AI World
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-glow">
