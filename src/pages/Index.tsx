@@ -66,7 +66,7 @@ const Index = () => {
             <Card className="glow-border overflow-hidden">
               <img 
                 src={heroPreview} 
-                alt="Abstract geometric design preview showcasing portfolio work" 
+                alt="Professional portrait of Alex working with AI technology in modern workspace" 
                 className="w-full h-full object-cover"
               />
             </Card>
