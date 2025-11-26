@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Linkedin, Instagram, Github } from "lucide-react";
+import heroPreview from "@/assets/hero-preview.jpg";
+import projectCoffee from "@/assets/project-coffee.jpg";
+import projectFestival from "@/assets/project-festival.jpg";
+import projectSocial from "@/assets/project-social.jpg";
+import projectUi from "@/assets/project-ui.jpg";
 
 const Index = () => {
   return (
@@ -59,16 +64,12 @@ const Index = () => {
           </div>
           
           <div className="relative">
-            <Card className="glow-border bg-gradient-to-br from-card to-secondary p-8 md:p-12">
-              <div className="aspect-square flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-24 h-24 mx-auto rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-primary animate-pulse" />
-                  </div>
-                  <p className="text-xl font-bold text-primary">Portfolio Preview</p>
-                  <p className="text-sm text-muted-foreground">Crafting visual excellence</p>
-                </div>
-              </div>
+            <Card className="glow-border overflow-hidden">
+              <img 
+                src={heroPreview} 
+                alt="Abstract geometric design preview showcasing portfolio work" 
+                className="w-full h-full object-cover"
+              />
             </Card>
           </div>
         </div>
@@ -198,13 +199,12 @@ const Index = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Project 1 */}
           <Card className="group overflow-hidden bg-card border-border hover-glow hover:border-primary/50 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary relative overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 mx-auto rounded-lg bg-primary/30 border border-primary" />
-                  <p className="text-sm text-muted-foreground">Project Image</p>
-                </div>
-              </div>
+            <div className="aspect-video relative overflow-hidden">
+              <img 
+                src={projectCoffee} 
+                alt="Urban Brew Coffee brand packaging design with modern logo and coffee products" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div className="p-6 space-y-3">
               <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
@@ -223,13 +223,12 @@ const Index = () => {
 
           {/* Project 2 */}
           <Card className="group overflow-hidden bg-card border-border hover-glow hover:border-primary/50 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-secondary relative overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 mx-auto rounded-lg bg-purple-500/30 border border-purple-500" />
-                  <p className="text-sm text-muted-foreground">Project Image</p>
-                </div>
-              </div>
+            <div className="aspect-video relative overflow-hidden">
+              <img 
+                src={projectFestival} 
+                alt="Neon Nights Music Festival poster with vibrant neon typography and geometric design" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div className="p-6 space-y-3">
               <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
@@ -247,13 +246,12 @@ const Index = () => {
 
           {/* Project 3 */}
           <Card className="group overflow-hidden bg-card border-border hover-glow hover:border-primary/50 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-pink-500/20 to-secondary relative overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 mx-auto rounded-lg bg-pink-500/30 border border-pink-500" />
-                  <p className="text-sm text-muted-foreground">Project Image</p>
-                </div>
-              </div>
+            <div className="aspect-video relative overflow-hidden">
+              <img 
+                src={projectSocial} 
+                alt="Luma Studio social media templates on phone mockup with minimalist design" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div className="p-6 space-y-3">
               <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
@@ -271,13 +269,12 @@ const Index = () => {
 
           {/* Project 4 */}
           <Card className="group overflow-hidden bg-card border-border hover-glow hover:border-primary/50 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-secondary relative overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 mx-auto rounded-lg bg-blue-500/30 border border-blue-500" />
-                  <p className="text-sm text-muted-foreground">Project Image</p>
-                </div>
-              </div>
+            <div className="aspect-video relative overflow-hidden">
+              <img 
+                src={projectUi} 
+                alt="Portfolio landing page concept with bold typography on desktop screen" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div className="p-6 space-y-3">
               <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
